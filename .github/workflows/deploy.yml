@@ -4,7 +4,7 @@ name: CI-CD pipeline to AWS
 env:
   DJANGO_SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
   ALLOWED_HOSTS: ${{ secrets.ALLOWED_HOSTS }}
-  EB_S3_BUCKET_NAME: "django-deployment-mydonatepage-test "
+  EB_S3_BUCKET_NAME: "django-deployment-mydonatepage-test"
   EB_APPLICATION_NAME: "django-app-mydonatepage-test"
   EB_ENVIRONMENT_NAME: "Django-app-env"
   DEPLOY_PACKAGE_NAME: "django-app-${{ github.sha }}.zip"
