@@ -5,6 +5,7 @@ charset-normalizer==3.4.2
 cryptography==44.0.3
 Django==4.2.21
 django-allauth==65.7.0
+gunicorn==23.0
 idna==3.10
 oauthlib==3.2.2
 pip==22.3.1
