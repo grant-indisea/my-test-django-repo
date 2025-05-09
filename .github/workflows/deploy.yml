@@ -26,12 +26,18 @@ jobs:
         with:
           python-version: 3.8
 
-      - name: Install dependencies
+      - name: Install latest pip and dependencies
         run: |
+          # Download and install latest pip directly from PyPI
+          curl -sS https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+          python get-pip.py
+      
+          # Confirm the pip version
           pip --version
-          python -m pip install --upgrade pip
-          pip --version
+      
+          # Install Python dependencies
           pip install -r requirements.txt
+
 
 
       - name: Collect static files
